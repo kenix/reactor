@@ -80,6 +80,10 @@ subprojects {
     test {
         maxParallelForks = 3
         forkEvery = 50
+
+        testLogging {
+            events 'started', 'passed'
+        }
     }
 
     repositories {
